@@ -1,4 +1,4 @@
-# Test Automation Framework
+# Test Automation Framework by Daniel Alvarado
 
 This is a test automation framework built using Selenium, TestNG, and Java for web application testing. For the discussion part check out the _Technical Test_ folder.
 
