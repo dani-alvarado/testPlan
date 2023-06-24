@@ -1,4 +1,4 @@
-# Test Automation Framework
+# Test Automation Framework by Daniel Alvarado
 
 This is a test automation framework built using Selenium, TestNG, and Java for web application testing. For the discussion part check out the _Technical Test_ folder.
 
@@ -10,6 +10,8 @@ This is a test automation framework built using Selenium, TestNG, and Java for w
 - [Setup](#setup)
 - [Running Tests](#running-tests)
 - [Test Data](#test-data)
+- [Reporting](#reporting)
+- [Git Versioning](#git-versioning)
 
 ## Overview
 
@@ -55,3 +57,11 @@ mvn clean install`
 ## Test Data
 
 Test data is managed through the `config.properties` file located in the `src/test/resources` directory. Create the file and update the properties to set the necessary test data, such as URLs, usernames, passwords, etc. You can access the test data in your test classes using the `config.getProperty("propertyName")` method.
+
+## Reporting
+
+After running the tests, an HTML report will be generated. This was done using _Extent Reports_, to visualize it just open it in a browser.
+
+## Git Versioning
+
+For the purpose of this exercise, the branching strategy used was GitFlow with pull requests. To check that you can take a look at the branches and the pull requests closed
