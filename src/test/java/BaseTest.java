@@ -13,6 +13,7 @@ public class BaseTest {
     protected BasePage basePage;
     protected Properties config;
     protected Properties expectedContent;
+    protected Properties dynamicLocators;
 
     @BeforeClass
     public void setUp() {
@@ -20,10 +21,15 @@ public class BaseTest {
         basePage = new BasePage(driver); // Sets the base page
         config = LoadProperties.loadProperties("src/main/resources/config.properties");
         expectedContent = LoadProperties.loadProperties("src/main/resources/expected_contents.properties");
+        dynamicLocators = LoadProperties.loadProperties("src/main/resources/dynamic_locators.properties");
     }
 
     @AfterClass
     public void tearDown() {
         driver.quit();
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 }

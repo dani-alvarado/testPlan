@@ -17,4 +17,16 @@ public class Utils {
 
         return sb.toString();
     }
+
+    public static String calculateTax(double price) {
+        double taxRate = 0.08; // This is the set tax rate for the app
+        double orderTax = price * taxRate;
+
+        return String.format("%.2f", orderTax);
+    }
+
+    public static String calculateTotalPrice(double price) {
+        double orderTax = Double.parseDouble(calculateTax(price));
+        return String.valueOf(orderTax+price);
+    }
 }
