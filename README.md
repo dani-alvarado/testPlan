@@ -1,15 +1,15 @@
 # Test Automation Framework
 
-This is a test automation framework built using Selenium, TestNG, and Java for web application testing.
+This is a test automation framework built using Selenium, TestNG, and Java for web application testing. For the discussion part check out the _Technical Test_ folder.
 
 ## Table of Contents
 
--   [Overview](#overview)
--   [Features](#features)
--   [Prerequisites](#prerequisites)
--   [Setup](#setup)
--   [Running Tests](#running-tests)
--   [Test Data](#test-data)
+- [Overview](#overview)
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Setup](#setup)
+- [Running Tests](#running-tests)
+- [Test Data](#test-data)
 
 ## Overview
 
@@ -19,41 +19,38 @@ The framework uses TestNG as the testing framework, allowing the creation of tes
 
 ## Features
 
--   Page Object Model (POM) design pattern for improved maintainability and reusability.
--   Configuration file for managing test data and settings.
--   TestNG annotations for easy test case creation and execution.
--   Utility methods for handling common operations, such as waiting for elements, taking screenshots, etc.
--   Custom listeners for capturing test events
+- Page Object Model (POM) design pattern for improved maintainability and reusability.
+- Configuration file for managing test data and settings.
+- TestNG annotations for easy test case creation and execution.
+- Utility methods for handling common operations, such as waiting for elements, taking screenshots, etc.
+- Custom listeners for capturing test events
 
 ## Prerequisites
 
--   Java Development Kit (JDK) 8 or higher
--   Maven build tool
--   Selenium WebDriver
--   TestNG
--   Web browser drivers (e.g., ChromeDriver, GeckoDriver)
+- Java Development Kit (JDK) 8 or higher
+- Maven build tool
+- Selenium WebDriver
+- TestNG
+- Web browser drivers (e.g., ChromeDriver, GeckoDriver)
 
 ## Setup
 
 1.  Clone the repository to your local machine.
-    
-    `git clone https://github.com/dani-alvarado/testPlan.git` 
-    
+
+    `git clone https://github.com/dani-alvarado/testPlan.git`
+
 2.  Install the required dependencies using Maven.
-    
+
     `cd testPlan
-    mvn clean install` 
-    
+mvn clean install`
+
 3.  Set up the configuration file with the necessary test data and settings. Modify the `config.properties` file located in the `src/test/resources` directory.
-    
-    
 
 ## Running Tests
 
 1.  To run the entire test suite, execute the following command:
- 
-    `mvn test` 
-    
+
+    `mvn test`
 
 ## Test Data
 
